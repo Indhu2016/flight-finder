@@ -41,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/smart-travel-optimizer.git"
+    "url": "git+https://github.com/Indhu2016/flight-finder.git"
   },
   "keywords": [
     "agentic-ai",
@@ -57,9 +57,9 @@
   "author": "Your Name <your.email@example.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yourusername/smart-travel-optimizer/issues"
+    "url": "https://github.com/Indhu2016/flight-finder/issues"
   },
-  "homepage": "https://github.com/yourusername/smart-travel-optimizer#readme",
+  "homepage": "https://github.com/Indhu2016/flight-finder#readme",
   "devDependencies": {
     "@types/node": "^20.10.0",
     "eslint": "^8.55.0",

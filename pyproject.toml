@@ -67,9 +67,9 @@ dev = [
 smart-travel = "main:main"
 
 [project.urls]
-Homepage = "https://github.com/yourusername/smart-travel-optimizer"
-Repository = "https://github.com/yourusername/smart-travel-optimizer.git"
-Issues = "https://github.com/yourusername/smart-travel-optimizer/issues"
+Homepage = "https://github.com/Indhu2016/flight-finder"
+Repository = "https://github.com/Indhu2016/flight-finder.git"
+Issues = "https://github.com/Indhu2016/flight-finder/issues"
 
 # Testing Configuration
 [tool.pytest.ini_options]
