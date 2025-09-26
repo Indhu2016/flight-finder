@@ -1,0 +1,65 @@
+[
+  {
+    "provider": "MOCK",
+    "mode": "flight",
+    "airline": "Austrian Airlines",
+    "origin": "Stuttgart",
+    "destination": "Vienna",
+    "date": "2025-10-01",
+    "price_eur": 180,
+    "total_hours": 1.25,
+    "connections": 0,
+    "baggage": {
+      "checked_bags": 2,
+      "per_bag_kg": 23
+    }
+  },
+  {
+    "provider": "MOCK",
+    "mode": "flight",
+    "airline": "Lufthansa",
+    "origin": "Stuttgart",
+    "destination": "Vienna",
+    "date": "2025-10-01",
+    "price_eur": 220,
+    "total_hours": 3.5,
+    "connections": 1,
+    "baggage": {
+      "checked_bags": 2,
+      "per_bag_kg": 23
+    },
+    "via": [
+      "Frankfurt"
+    ]
+  },
+  {
+    "provider": "MOCK",
+    "mode": "train",
+    "carrier": "ÖBB",
+    "origin": "Stuttgart",
+    "destination": "Vienna",
+    "date": "2025-10-01",
+    "price_eur": 120,
+    "total_hours": 7.2,
+    "connections": 1,
+    "baggage": {
+      "checked_bags": 3,
+      "per_bag_kg": 30
+    }
+  },
+  {
+    "provider": "MOCK",
+    "mode": "bus",
+    "carrier": "FlixBus",
+    "origin": "Stuttgart",
+    "destination": "Vienna",
+    "date": "2025-10-01",
+    "price_eur": 60,
+    "total_hours": 9.5,
+    "connections": 0,
+    "baggage": {
+      "checked_bags": 2,
+      "per_bag_kg": 20
+    }
+  }
+]

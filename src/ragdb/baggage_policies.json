@@ -1,0 +1,18 @@
+{
+  "Austrian Airlines": {
+    "checked_bags": 2,
+    "per_bag_kg": 23
+  },
+  "Lufthansa": {
+    "checked_bags": 2,
+    "per_bag_kg": 23
+  },
+  "ÖBB": {
+    "checked_bags": 3,
+    "per_bag_kg": 30
+  },
+  "FlixBus": {
+    "checked_bags": 2,
+    "per_bag_kg": 20
+  }
+}

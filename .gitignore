@@ -1,0 +1,152 @@
+# ============================================================================
+# Smart Travel Optimizer - Git Ignore Configuration
+# ============================================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pipenv/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn/
+.pnp.*
+
+# IDE and OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Build and Distribution
+build/
+dist/
+*.tar.gz
+*.whl
+
+# Testing and Coverage
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+coverage.xml
+pytest-report.xml
+.nox/
+
+# Security and Analysis Reports
+reports/
+.scannerwork/
+.sonar/
+bandit-report.json
+safety-report.json
+pip-audit-report.json
+
+# Logs
+*.log
+logs/
+.log
+
+# Database
+*.db
+*.sqlite3
+
+# Temporary Files
+*.tmp
+*.temp
+.cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment Variables (SECURITY CRITICAL)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.envrc
+
+# Certificates and Keys (SECURITY CRITICAL)
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# Backup Files
+*.bak
+*.backup
+*.orig
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Binaries - Keep locally but don't commit to git!
+node-v22.19.0-win-x64/
+sonar-scanner-7.2.0.5079-windows-x64/
+*.exe
+*.msi
+
+# Package Manager Lock Files (Optional - team decision)  
+# Uncomment if you want to ignore lock files
+# package-lock.json
+# yarn.lock
+# poetry.lock
