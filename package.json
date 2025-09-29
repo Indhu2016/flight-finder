@@ -28,16 +28,14 @@
     "security:audit": "pip-audit --format=json --output=reports/pip-audit-report.json",
     "sonar": "sonar-scanner",
     "sonar:local": "docker run --rm -v \"$(pwd):/usr/src\" sonarsource/sonar-scanner-cli",
-    "build": "python -m build",
-    "clean": "npm run clean:python && npm run clean:js",
+    "clean": "npm run clean:python && npm run clean:reports",
     "clean:python": "find . -type f -name '*.pyc' -delete && find . -type d -name '__pycache__' -delete && rm -rf .pytest_cache/ htmlcov/ .coverage coverage.xml",
-    "clean:js": "rm -rf node_modules/ .eslintcache",
     "clean:reports": "rm -rf reports/",
     "setup": "npm install && npm run python:install-dev",
     "setup:prod": "npm install --production && npm run python:install",
     "ci": "npm run lint && npm run test:coverage && npm run security",
     "precommit": "lint-staged",
-    "prepare": "husky install || echo 'Husky not available'"
+    "prepare": "echo 'Development environment ready'"
   },
   "repository": {
     "type": "git",
@@ -54,21 +52,18 @@
     "multi-criteria-optimization",
     "travel-ai"
   ],
-  "author": "Your Name <your.email@example.com>",
+  "author": "Smart Travel Team <team@smarttravel.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Indhu2016/flight-finder/issues"
   },
   "homepage": "https://github.com/Indhu2016/flight-finder#readme",
   "devDependencies": {
-    "@types/node": "^20.10.0",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
     "prettier": "^3.1.0",
-    "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
-    "sonarqube-scanner": "^3.3.0",
-    "npm-run-all": "^4.1.5"
+    "sonarqube-scanner": "^3.3.0"
   },
   "dependencies": {},
   "engines": {

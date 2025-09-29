@@ -1,32 +1,20 @@
-# ============================================================================
-# Smart Travel Optimizer - Development Dependencies
-# Install with: pip install -r requirements-dev.txt
-# ============================================================================
-
-# Include production dependencies
+# Development Dependencies for Smart Travel Optimizer
 -r requirements.txt
 
-# Testing Framework
+# Testing
 pytest==7.4.3
 pytest-cov==4.1.0
 pytest-mock==3.12.0
-pytest-asyncio==0.21.1
-pytest-xdist==3.6.0         # Parallel test execution
 
-# Code Quality and Formatting (Modern Stack)
-ruff==0.1.15                # Fast Python linter and formatter
-black==23.12.1              # Code formatting
-isort==5.13.2               # Import sorting
-mypy==1.8.0                 # Type checking
+# Code Quality
+ruff==0.1.15
+black==23.12.1
+isort==5.13.2
 
-# Security Scanning
-bandit==1.7.5               # Security linter
-safety==3.0.1               # Dependency vulnerability checker
-pip-audit==2.6.1            # Pip package auditing
+# Security
+bandit==1.7.5
+safety==3.0.1
+pip-audit==2.6.1
 
 # Development Tools
-pre-commit==3.6.0           # Git hooks
-pytest-watch==4.2.0         # Test watching
-
-# Type Stubs
-types-requests==2.31.0.20
+pre-commit==3.6.0

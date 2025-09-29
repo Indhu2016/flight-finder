@@ -14,21 +14,6 @@ An **agentic AI system** that finds optimal travel routes with minimal time, cos
 
 ## 🚀 Quick Start
 
-### ⚡ Super Quick (2 minutes with Mock Data)
-```bash
-cp .env.example .env
-pip install -r requirements.txt
-python main.py --origin "Stuttgart" --destination "Vienna" --date "2025-10-01"
-```
-
-### 🔑 With Real API Keys
-1. **📖 Read the guides**:
-   - **[QUICK_START.md](QUICK_START.md)** - 5-minute setup
-   - **[docs/API_KEYS_SETUP.md](docs/API_KEYS_SETUP.md)** - Detailed instructions
-
-2. **🪟 Windows Users**: Run `.\setup-api-keys.ps1`
-3. **🐧 Linux/Mac Users**: Run `./setup-api-keys.sh`
-
 ### 1. Environment Setup
 ```bash
 python -m venv .venv
@@ -44,7 +29,6 @@ pip install -r requirements.txt
 ```bash
 cp .env.example .env
 # Edit .env with your SMTP and API credentials
-# See docs/API_KEYS_SETUP.md for detailed instructions
 ```
 
 ### 3. Run Application
