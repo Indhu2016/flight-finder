@@ -141,12 +141,42 @@ Desktop.ini
 
 # Binaries - Keep locally but don't commit to git!
 node-v22.19.0-win-x64/
-sonar-scanner-7.2.0.5079-windows-x64/
+sonar-scanner-*/
 *.exe
 *.msi
+
+# Streamlit
+.streamlit/
+
+# Travel API Cache Files
+api_cache/
+flight_cache/
+travel_data_cache/
+
+# Route Planning Data
+route_cache/
+*.routes
+*.itinerary
+
+# Email Attachments and Temp Files
+attachments/
+temp_files/
+*.eml
 
 # Package Manager Lock Files (Optional - team decision)  
 # Uncomment if you want to ignore lock files
 # package-lock.json
 # yarn.lock
 # poetry.lock
+
+# AI/ML Model Files (if any)
+*.pkl
+*.joblib
+*.model
+models/
+
+# Large Data Files
+*.csv
+*.json.bak
+*.data
+data_backup/
