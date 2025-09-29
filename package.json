@@ -5,37 +5,14 @@
   "main": "main.py",
   "type": "module",
   "scripts": {
-    "dev": "npm run python:dev",
-    "start": "npm run python:start",
-    "python:dev": "streamlit run streamlit_app.py --server.runOnSave true",
-    "python:start": "python main.py",
-    "python:install": "pip install -r requirements.txt",
-    "python:install-dev": "pip install -r requirements-dev.txt",
+    "dev": "streamlit run streamlit_app.py",
+    "start": "python main.py",
+    "install": "pip install -r requirements.txt",
     "test": "pytest",
-    "test:watch": "pytest-watch",
-    "test:coverage": "pytest --cov=src --cov-report=html --cov-report=xml",
-    "lint": "npm run lint:python && npm run lint:js",
-    "lint:python": "ruff check src/ main.py streamlit_app.py tests/",
-    "lint:js": "eslint *.js *.mjs || echo 'No JS files to lint'",
-    "format": "npm run format:python && npm run format:js",
-    "format:python": "black src/ main.py streamlit_app.py tests/ && isort src/ main.py streamlit_app.py tests/",
-    "format:js": "prettier --write '*.{js,mjs,json}' || echo 'No JS files to format'",
-    "security": "npm run security:sonar && npm run security:python",
-    "security:sonar": "sonar-scanner -Dsonar.projectKey=smart-travel-optimizer -Dsonar.sources=src/,main.py,streamlit_app.py -Dsonar.tests=tests/",
-    "security:python": "bandit -r src/ main.py streamlit_app.py && safety check && pip-audit",
-    "security:bandit": "bandit -r src/ main.py streamlit_app.py -f json -o reports/bandit-report.json",
-    "security:safety": "safety check --json --output reports/safety-report.json",
-    "security:audit": "pip-audit --format=json --output=reports/pip-audit-report.json",
-    "sonar": "sonar-scanner",
-    "sonar:local": "docker run --rm -v \"$(pwd):/usr/src\" sonarsource/sonar-scanner-cli",
-    "clean": "npm run clean:python && npm run clean:reports",
-    "clean:python": "find . -type f -name '*.pyc' -delete && find . -type d -name '__pycache__' -delete && rm -rf .pytest_cache/ htmlcov/ .coverage coverage.xml",
-    "clean:reports": "rm -rf reports/",
-    "setup": "npm install && npm run python:install-dev",
-    "setup:prod": "npm install --production && npm run python:install",
-    "ci": "npm run lint && npm run test:coverage && npm run security",
-    "precommit": "lint-staged",
-    "prepare": "echo 'Development environment ready'"
+    "format": "black src/ main.py streamlit_app.py tests/",
+    "lint": "ruff check src/ main.py streamlit_app.py tests/",
+    "security": "bandit -r src/ main.py streamlit_app.py",
+    "sonar": "sonar-scanner"
   },
   "repository": {
     "type": "git",
@@ -59,31 +36,12 @@
   },
   "homepage": "https://github.com/Indhu2016/flight-finder#readme",
   "devDependencies": {
-    "eslint": "^8.55.0",
-    "eslint-config-prettier": "^9.1.0",
-    "prettier": "^3.1.0",
-    "lint-staged": "^15.2.0",
     "sonarqube-scanner": "^3.3.0"
   },
-  "dependencies": {},
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=9.0.0",
     "python": ">=3.8"
-  },
-  "lint-staged": {
-    "*.py": [
-      "black",
-      "isort",
-      "ruff check --fix"
-    ],
-    "*.{js,mjs,json}": [
-      "prettier --write"
-    ]
-  },
-  "browserslist": [
-    "defaults",
-    "not ie 11",
-    "not op_mini all"
-  ]
+  }
+
 }

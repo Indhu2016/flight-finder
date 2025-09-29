@@ -1,29 +1,15 @@
-# ============================================================================
-# Smart Travel Optimizer - Production Dependencies
-# Agentic AI Travel Route Optimization System
-# ============================================================================
+# Smart Travel Optimizer - Dependencies
+# Core Dependencies
+python-dotenv==1.0.1
+requests==2.32.3
+pydantic==2.9.2
+rich==13.9.2
+streamlit==1.38.0
 
-# Core Runtime Dependencies
-python-dotenv==1.0.1        # Environment variable management
-requests==2.32.3            # HTTP requests library
-pydantic==2.9.2             # Data validation and settings
-rich==13.9.2                # Rich terminal output
-streamlit==1.38.0           # Web UI framework
-
-# HTTP and API clients
-httpx==0.27.0               # Modern async HTTP client
-aiohttp==3.9.5              # Async HTTP for concurrent requests
-
-# Data processing and validation
-jsonschema==4.23.0          # JSON schema validation
-marshmallow==3.21.3         # Advanced serialization
-
-# Async and performance
-asyncio-throttle==1.0.2     # Rate limiting for async requests
-cachetools==5.3.3           # In-memory caching utilities
-
-# Logging and monitoring
-structlog==23.2.0           # Structured logging
-
-# CLI framework
-click==8.1.7                # Command-line interface
+# Development and Testing (optional)
+pytest==7.4.3
+pytest-cov==4.1.0
+ruff==0.1.15
+black==23.12.1
+bandit==1.7.5
+safety==3.0.1
